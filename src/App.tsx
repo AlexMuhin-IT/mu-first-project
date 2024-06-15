@@ -5,7 +5,11 @@ import styled from 'styled-components';
 function App() {
   return (
     <div className="App">
-      <StyleBtn>Hello</StyleBtn>
+      <Box>
+        <StyleBtn as="a">Link</StyleBtn>
+        <StyleBtn>Hello</StyleBtn>
+        <SuperButton>Super Button</SuperButton>
+      </Box>
     </div>
   );
 }
@@ -17,8 +21,18 @@ const StyleBtn = styled.button`
   border: none;
   background-color: blue;
   padding: 10px 20px;
-  border-radius: 5px;
   color: #fff;
   font-size: 2rem;
-  font-weight: bolt;
+  font-weight: bold;
+`
+const SuperButton = styled(StyleBtn)`
+  border-radius: 5px;
+  background-color: red;
+`
+
+const Box = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
