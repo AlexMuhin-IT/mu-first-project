@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components';
-import { Box, Link, StyleBtn, SuperButton } from './components/Button.styled';
+import { Box, StyleBtn, SuperButton } from './components/Button.styled';
+import { Link } from './components/Link.staled';
 
 function App() {
   return (
